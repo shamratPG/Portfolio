@@ -43,9 +43,14 @@ nav ul li a:hover {
     color: white;
 }
 
-#welcome {
+section {
     width: 90%;
     margin: auto;
+}
+
+#welcome {
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .title-text {
@@ -63,8 +68,32 @@ p {
     line-height: 2rem;
     font-size: 1.3rem;
     color: rgb(110, 110, 110);
+    margin-bottom: 20px;
 }
 
 .colored-content {
     color: #F8C124;
+}
+
+.button {
+    text-decoration: none;
+    padding: 10px 30px;
+    background-image: linear-gradient(90deg, #f56e46, #ee3e08);
+    color: white;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 5px 1px grey;
+}
+
+.button:hover {
+    box-shadow: 2px 2px 5px 1px black;
+}
+
+
+.images {
+    display: block;
+    width: 70%;
+    margin: 50px auto 10px;
 }
