@@ -12,7 +12,7 @@
 nav {
     width: 100%;
     padding: 10px 0 6px 30px;
-    background-color: #F8C124;
+    background-color: #ffc527;
     color: rgb(13, 146, 146);
     justify-content: space-between;
 }
@@ -58,9 +58,16 @@ section {
     margin: 30px 0;
 }
 
+.head-two {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 20px 0 40px;
+}
+
+
 .sub-text {
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 30px;
 }
 
@@ -105,15 +112,16 @@ p {
     margin-bottom: 20px;
 }
 
-.ex-sections {
+/* .ex-sections {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+} */
 
 .ex-item {
     width: 95%;
-    padding-left: 20px
+    padding-left: 20px;
+    box-shadow: 5px 5px 20px 4px rgb(184, 184, 184);
 }
 
 .ful-stack {
@@ -129,17 +137,83 @@ p {
     margin-bottom: 30px;
 }
 
+#social {
+    margin-bottom: 30px;
+    margin-top: 60px;
 
-.email-items {
-    margin: 0 auto 30px;
-    width: 40%;
-    display: flex;
-    flex-direction: column;
 }
 
-label {
+.social-icons {
+    margin: 40px auto;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+}
+
+.social-icons i {
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+#facebook {
+    padding: 20px 25px
+}
+
+footer {
+    background-color: #dadada;
+    margin-top: 80px;
+    padding: 20px;
     text-align: center;
-    margin-bottom: 20px;
-    font-size: 1.3rem;
-    color: rgb(110, 110, 110);
+}
+
+@media(min-width: 769px) {
+    #welcome {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .welcome-content {
+        width: 45%;
+    }
+
+    .welcome-img {
+        width: 45%;
+    }
+
+    .images {
+        width: 100%;
+    }
+
+    #dream {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .dream-img {
+        width: 45%;
+    }
+
+    .dream-content {
+        width: 45%;
+    }
+
+    .ex-sections {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .ex-item {
+        width: 48%;
+        padding: 25px;
+        text-align: justify;
+    }
+
+    .baby-dev {
+        margin-top: 0
+    }
+
+
 }
